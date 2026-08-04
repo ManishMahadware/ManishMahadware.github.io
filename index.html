@@ -3,36 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mmanager — chat-first personal manager for Android</title>
-<meta name="description" content="Mmanager turns anything you type, speak or share into organised events, tasks, notes and files — synced to your own Google Calendar, Sheets and Drive.">
+<title>Mmanager — AI personal manager app for Android</title>
+<meta name="description" content="Mmanager is an Android app that turns anything you type, speak, or share into organized calendar events, tasks, notes, links, and files — synced to your own Google Calendar, Sheets, and Drive.">
 <style>
   body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: #08080F;
-         color: #F0EDE8; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-  .card { text-align: center; padding: 60px 24px; max-width: 640px; }
-  .mark { font-size: 64px; line-height: 1; }
-  h1 { font-size: 42px; font-weight: 800; margin: 18px 0 6px; }
-  h1 .a { color: #E8734A; }
-  .tag { color: #9CA3AF; font-size: 17px; margin-bottom: 10px; }
-  p.desc { color: #c9c5be; font-size: 15.5px; line-height: 1.7; margin: 0 auto 30px; max-width: 520px; }
+         color: #F0EDE8; margin: 0; min-height: 100vh; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 60px; }
+  header { text-align: center; margin-bottom: 40px; }
+  .mark { font-size: 56px; line-height: 1; }
+  h1 { font-size: 40px; font-weight: 800; margin: 16px 0 6px; color: #F0EDE8; }
+  h1::first-letter { color: #E8734A; }
+  .tag { color: #9CA3AF; font-size: 17px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 0 0 10px; color: #F0EDE8; }
+  p { color: #c9c5be; font-size: 15.5px; line-height: 1.7; }
+  section { margin-bottom: 30px; }
+  ul.pillars { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 14px; }
+  ul.pillars li { background: #12121C; border: 1px solid #26263A; border-radius: 10px; padding: 14px 18px; }
+  ul.pillars b { color: #F0EDE8; }
+  .cta-row { text-align: center; margin: 36px 0 8px; }
   .cta { display: inline-block; background: #E8734A; color: #14060B; font-weight: 700;
          text-decoration: none; padding: 13px 30px; border-radius: 999px; font-size: 16px; }
-  .links { margin-top: 34px; font-size: 14px; }
+  .links { margin-top: 26px; font-size: 14px; text-align: center; }
   .links a { color: #9CA3AF; text-decoration: none; margin: 0 12px; }
   .links a:hover { color: #E8734A; }
 </style>
 </head>
 <body>
-<div class="card">
-  <div class="mark">✳️</div>
-  <h1>M<span class="a">manager</span></h1>
-  <div class="tag">Your chat-first personal manager</div>
-  <p class="desc">One input box for everything. Type it, speak it, or share it — Mmanager's AI turns
-  it into events, tasks, notes, links and files, organised in your own Google Calendar, Sheets and
-  Drive, with a searchable second brain on your phone. Leave a mark.</p>
-  <a class="cta" href="https://play.google.com/store/apps/details?id=com.manish.mmanager">Get it on Google Play</a>
+<div class="wrap">
+  <header>
+    <div class="mark">✳️</div>
+    <h1>Mmanager</h1>
+    <div class="tag">Your chat-first personal manager, for Android</div>
+  </header>
+
+  <section>
+    <h2>What Mmanager does</h2>
+    <p>Mmanager is an Android app built around one input box. Type a thought, speak it, or share
+    it in from any other app, and Mmanager's AI reads it, works out what you meant, and — after you
+    confirm — files it away automatically: as a calendar event, a task, a note, a link, or a saved
+    file. Nothing is guessed and saved silently; you always see and approve what gets created before
+    it's stored.</p>
+  </section>
+
+  <section>
+    <h2>The three things it's built around</h2>
+    <ul class="pillars">
+      <li><b>Smart Calendar Manager</b> — describe a plan in plain language and Mmanager creates,
+      updates, or reschedules the matching event in your own Google Calendar.</li>
+      <li><b>Second Brain</b> — links, quotes, files, notes, tasks, and birthdays you capture are
+      kept in a single searchable place on your phone, tagged and filterable.</li>
+      <li><b>Personal AI Advisor</b> — on request, Mmanager can lay out your day, flag things going
+      stale, and give you a short morning brief.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where your data lives</h2>
+    <p>Everything you confirm is stored in <b>your own</b> Google Calendar, Google Sheets, and Google
+    Drive — Mmanager reads and writes to those on your behalf using the Google account you sign in
+    with. A local encrypted copy is also kept on your device. See the
+    <a href="privacy.html" style="color:#E8734A;">Privacy Policy</a> for full detail on what is
+    accessed and how it's used.</p>
+  </section>
+
+  <div class="cta-row">
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.manish.mmanager">Get Mmanager on Google Play</a>
+  </div>
   <div class="links">
     <a href="privacy.html">Privacy Policy</a> ·
-    <a href="mailto:manish.mahadware@gmail.com">Contact</a>
+    <a href="mailto:manish.mahadware@gmail.com">Contact the developer</a>
   </div>
 </div>
 </body>
